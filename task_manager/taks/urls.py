@@ -7,6 +7,6 @@ router.register(r'tasks', TaskViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('register/', RegisterUsetView.as_view(), name='register'),
+    path('register/', RegisterUserView.as_view(), name='register'),
     path('login/', LoginView.as_view(), name='login'),
 ]
